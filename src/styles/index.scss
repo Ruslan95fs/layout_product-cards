@@ -1,3 +1,91 @@
+html {
+  font-family: "Roboto", sans-serif;
+}
+
 body {
   margin: 0;
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 198px;
+  height: 406px;
+  border: solid 1px #F3F3F3;
+  border-radius: 5px;
+
+  background-color: #FFF;
+}
+
+.card__image {
+  background-image: url(../images/imac.jpeg);
+  width: 160px;
+  height: 134px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  padding-top: 32px;
+  margin: 0 auto;
+}
+
+.card__content {
+
+}
+
+.card__title {
+  display: block;
+  position: relative;
+  width: 166px;
+  margin-bottom: 4px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-decoration: none;
+  color: #060B35 ;
+}
+
+.card__code {
+  width: 98px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0%;
+  color: #616070;
+}
+
+.card__rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stars {
+  display: flex;
+}
+
+.stars__star {
+  background-image: url(../images/star.svg);
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.stars--4 .stars__star:nth-child(-n + 4) {
+  background-image: url(../images/star-active.svg);
+}
+
+.card__reviews {
+  width: 53px;
+  height: 16px;
+
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0%;
+}
+
