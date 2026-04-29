@@ -1,7 +1,8 @@
 .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  box-sizing: border-box;
   width: $width-card;
   padding: 32px 16px 16px;
   border: solid 1px $border-color-card;
@@ -17,7 +18,7 @@
     background-image: url(../images/imac.jpeg);
     width: 160px;
     height: 134px;
-    margin: auto;
+    margin: 0 auto 40px;
     background-size: 160px 134px;
   }
 
@@ -98,6 +99,7 @@
     width: $width-button;
     height: $height-button;
     background-color: #00acdc;
+    border: 1px solid #00acdc;
     border-radius: $radius-button;
 
     align-items: center;
